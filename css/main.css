@@ -89,3 +89,9 @@
 .box h2 {
 	margin-right: 100px;
 }
+
+.third-section__inner {
+	width: 1280px;
+	height: 650px;
+	background-color: #333d4b;
+}

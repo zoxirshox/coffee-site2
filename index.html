@@ -4,90 +4,123 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Coffee</title>
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,300;9..144,500;9..144,700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,200;9..144,300;9..144,500;9..144,700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="container">
 				<div class="main-header__inner">
-					<h1>
-						<a href="/">
-							<img src="./img/coffee-site-logo.svg" alt="/" />
-							<img src="./img/coffeeroasters.svg" alt="logo" />
-						</a>
-					</h1>
-					<nav class="main-header__nav">
+					<div class="main-header__inner-img">
+						<h1>
+							<img src="./img/coffee-site-logo.svg" alt="logo" />
+							<img src="./img/coffeeroasters.svg" alt="logo-text" />
+						</h1>
+					</div>
+
+					<nav class="main-header__inner-nav">
 						<ul>
-							<li>HOME</li>
-							<li>ABOUT US</li>
-							<li>CREAT YOUR PLAN</li>
+							<li><a href="/">HOME</a></li>
+							<li><a href="/">ABOUT US</a></li>
+							<li><a href="/">CREAT YOUR PLAN</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="first-section">
+			<section class="hero-section">
 				<div class="container">
-					<div class="first-section__inner">
-						<h2>Great coffee made simple.</h2>
-						<p>
-							Start your mornings with the world’s best coffees. Try our
-							expertly curated artisan coffees from our best roasters delivered
-							directly to your door, at your schedule.
-						</p>
-						<button type="submit" class="btn btn-secondary">Create your plan</button>
+					<div class="hero-section__inner">
+						<div class="hero-section__inner-content">
+							<h2>Great coffee made simple.</h2>
+							<p>
+								Start your mornings with the world’s best coffees. Try our
+								expertly curated artisan coffees from our best roasters
+								delivered directly to your door, at your schedule.
+							</p>
+							<div class="hero-section__inner-content__button">
+								<a href="/">Create your plan</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="second-section">
 				<div class="container">
 					<div class="second-section__inner">
-						<img src="./img/background.png" alt="background" />
-						<div class="boxes-wrapper">
-							<div class="box">
-								<img src="./img/expresso.png" alt="expresso" />
-
-								<h2>Gran Espresso</h2>
-								<p>
+						<div class="second-section__inner-bg">
+							<h2>
+								<img src="./img/background.png" alt="bg" />
+							</h2>
+						</div>
+						<div class="second-section__cards-wrapper">
+							<div class="second-section__cards-wrapper__card">
+								<img
+									src="./img/kopi2.png"
+									width="255px"
+									height="193px"
+									alt="expresso"
+									class="second-section__cards-wrapper__card__card-img"
+								/>
+								<h3 class="second-section__cards-wrapper__card__card-title">
+									Gran Espresso
+								</h3>
+								<p class="second-section__cards-wrapper__card__card-desc">
 									Light and flavorful blend with cocoa and black pepper for an
 									intense experience.
 								</p>
 							</div>
-							<div class="box">
+							<div class="second-section__cards-wrapper__card">
 								<img
-									src="./img/kopi2.png"
-									alt="planalto"
+									src="./img/kopi3.svg"
+									width="255px"
 									height="193px"
-									width="256px
-								"
+									alt="planalto"
+									class="second-section__cards-wrapper__card__card-img"
 								/>
-
-								<h2>Planaltoo</h2>
-								<p>
+								<h3 class="second-section__cards-wrapper__card__card-title">
+									Planalto
+								</h3>
+								<p class="second-section__cards-wrapper__card__card-desc">
 									Brazilian dark roast with rich and velvety body, and hints of
 									fruits and nuts.
 								</p>
 							</div>
-							<div class="box">
-								<img src="./img/kopi3.png" alt="piccollo" />
-								<h2>Piccollo</h2>
-								<p>
+							<div class="second-section__cards-wrapper__card">
+								<img
+									src="./img/kopi4.svg"
+									width="255px"
+									height="170px"
+									alt="picolo"
+									class="second-section__cards-wrapper__card__card-img"
+								/>
+								<h3 class="second-section__cards-wrapper__card__card-title">
+									Piccollo
+								</h3>
+								<p class="second-section__cards-wrapper__card__card-desc">
 									Mild and smooth blend featuring notes of toasted almond and
 									dried cherry.
 								</p>
 							</div>
-							<div class="box">
-								<img src="./img/kopi4.png" alt="danche" />
-								<h2>Danche</h2>
-								<p>
+							<div class="second-section__cards-wrapper__card">
+								<img
+									src="./img/kopi2.svg"
+									width="255px"
+									height="193px"
+									alt="danche"
+									class="second-section__cards-wrapper__card__card-img"
+								/>
+								<h3 class="second-section__cards-wrapper__card__card-title">
+									Danche
+								</h3>
+								<p class="second-section__cards-wrapper__card__card-desc">
 									Ethiopian hand-harvested blend densely packed with vibrant
 									fruit notes.
 								</p>
@@ -96,114 +129,6 @@
 					</div>
 				</div>
 			</section>
-			<section class="third-section">
-				<div class="container">
-					<div class="third-section__inner">
-						<div class="third-section__subtitle">
-							<h2 class="third-section__title">Why choose us?</h2>
-							<p class="third-section__content">
-								A large part of our role is choosing which particular coffees
-								will be featured in our range. This means working closely with
-								the best coffee growers to give you a more impactful experience
-								on every level.
-							</p>
-						</div>
-						<div class="third-section__boxes-wrapper">
-							<div class="box1">
-								<img
-									class="box1-img"
-									src="./img/coffee-bean.svg"
-									width="72px"
-									height="72px"
-									alt="coffee-bean"
-								/>
-								<h2 class="box1-title">Best quality</h2>
-								<p class="box1-subtitle">
-									Discover an endless variety of the world’s best artisan coffee
-									from each of our roasters.
-								</p>
-							</div>
-							<div class="box2">
-								<img
-									class="box2-img"
-									src="./img/Combined Shape (1).svg"
-									width="72px"
-									height="72px"
-									alt="car"
-								/>
-
-								<h2 class="box2-title">Exclusive benefits</h2>
-								<p class="box2-subtitle">
-									Special offers and swag when you subscribe, including 30% off
-									your first shipment.
-								</p>
-							</div>
-							<div class="box3">
-								<img
-									class="box3-img"
-									src="./img/Combined Shape (2).svg"
-									width="72px"
-									height="71px"
-									alt="gift"
-								/>
-								<h2 class="box3-title">Free shipping</h2>
-								<p class="box3-subtitle">
-									We cover the cost and coffee is delivered fast. Peak
-									freshness: guaranteed.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="last-section">
-				<div class=container">
-					<div class="last-section__inner">
-						<h2 class="last-section__title">How it works</h2>
-						<hr class="last-section__line" />
-						<div class="line-oval">
-							<span class="oval-1"></span>
-							<span class="oval-2"></span>
-							<span class="oval-3"></span>
-						</div>
-						<div class="last-section">
-							<div class="pick-coffee">
-								<span class="pick-coffee-number">01</span>
-								<h2 class="pick-coffee-title">Pick your coffee</h2>
-								<p class="pick-coffee-subtitle">
-									Select from our evolving range of artisan coffees. Our beans
-									are ethically sourced and we pay fair prices for them. There
-									are new coffees in all profiles every month for you to try
-									out.
-								</p>
-							</div>
-							<div class="frequency">
-								<span class="frequency-number">02</span>
-								<h2 class="frequency-title">Choose the frequency</h2>
-								<p class="frequency-subtitle">
-									Customize your order frequency, quantity, even your roast
-									style and grind type. Pause, skip or cancel your subscription
-									with no commitment through our online portal.
-								</p>
-							</div>
-							<div class="enjoy">
-								<span class="enjoy-number">03</span>
-								<h2 class="enjoy-title">Receive and enjoy!</h2>
-								<p class="enjoy-subtitle">
-									We ship your package within 48 hours, freshly roasted. Sit
-									back and enjoy award-winning world-class coffees curated to
-									provide a distinct tasting experience.
-								</p>
-							</div>
-						</div>
-						<button class="btn btn-primary">Create your plan</button>
-					</div>
-				</div>
-			</section>
-
 		</main>
-		<footer>
-			
-		</footer>
 	</body>
 </html>
